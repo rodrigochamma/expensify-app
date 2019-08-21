@@ -9,7 +9,7 @@ module.exports = (env) => {
         //Basic configurations
         entry: './src/app.js',
         output: {
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         //Configuration for babel to process all js files excluding the node_modules directory
@@ -47,7 +47,8 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map' : 'inline-source-map',    
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true
+            historyApiFallback: true,
+            publicPath: '/dist/'
         }
     };
 };
