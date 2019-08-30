@@ -28,6 +28,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "firebase": "^6.4.0",
     "firebase-tools": "^7.2.4",
+    "history": "^4.7.2",
     "js-yaml": "^3.13.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
